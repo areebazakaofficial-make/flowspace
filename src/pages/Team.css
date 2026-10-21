@@ -1,0 +1,19 @@
+.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
+
+.team-card { padding: 24px; text-align: center; }
+
+.avatar.big { width: 64px; height: 64px; font-size: 24px; margin: 0 auto 12px; }
+
+.team-card h3 { font-size: 16px; font-weight: 600; }
+.team-role { font-size: 13px; color: var(--text-soft); margin-top: 2px; }
+
+.team-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 18px 0;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.team-stats h4 { font-size: 18px; font-weight: 700; }
+.team-stats p { font-size: 11px; color: var(--text-soft); margin-top: 2px; }

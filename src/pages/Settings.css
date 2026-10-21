@@ -1,0 +1,27 @@
+.set-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 18px; align-items: start; }
+
+.set-profile-row { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.set-name { font-size: 16px; font-weight: 600; }
+.set-role { font-size: 13px; color: var(--text-soft); }
+
+.set-grid label { display: block; font-size: 13px; font-weight: 500; margin: 14px 0 6px; color: var(--text-soft); }
+
+.set-grid input, .set-grid select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  background: var(--ivory);
+}
+
+.set-save { margin-top: 18px; }
+.set-saved { margin-left: 12px; font-size: 13px; color: var(--emerald-dark); font-weight: 600; }
+
+.set-pref-text { font-size: 13px; color: var(--text-soft); margin-bottom: 14px; line-height: 1.6; }
+.set-gap { margin-top: 24px; }
+.set-danger:hover { border-color: var(--red); color: var(--red); }
+
+@media (max-width: 900px) {
+  .set-grid { grid-template-columns: 1fr; }
+}

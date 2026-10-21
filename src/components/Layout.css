@@ -1,0 +1,9 @@
+.layout { min-height: 100vh; }
+
+.main-area { margin-left: 240px; min-height: 100vh; }
+
+.main-area > div:last-child { padding: 28px; }
+
+@media (max-width: 900px) {
+  .main-area { margin-left: 70px; }
+}

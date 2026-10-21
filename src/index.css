@@ -1,0 +1,92 @@
+/* ============ FlowSpace Theme ============ */
+:root {
+  --emerald: #10B981;
+  --emerald-dark: #059669;
+  --emerald-deep: #064E3B;
+  --emerald-light: #D1FAE5;
+  --ivory: #FAF9F6;
+  --white: #FFFFFF;
+  --gold: #C9A227;
+  --gold-soft: #F5EBD0;
+  --text-main: #1E293B;
+  --text-soft: #64748B;
+  --border: #E7E5E0;
+  --red: #EF4444;
+  --blue: #3B82F6;
+  --orange: #F59E0B;
+  --shadow: 0 2px 12px rgba(6, 78, 59, 0.06);
+  --radius: 14px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ivory);
+  color: var(--text-main);
+}
+
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+
+a { text-decoration: none; color: inherit; }
+button { font-family: inherit; cursor: pointer; border: none; }
+input, select, textarea { font-family: inherit; outline: none; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 8px; }
+
+/* ---- reusable ---- */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.btn-emerald {
+  background: var(--emerald);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+.btn-emerald:hover { background: var(--emerald-dark); }
+
+.btn-ghost {
+  background: var(--white);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: border 0.2s;
+}
+.btn-ghost:hover { border-color: var(--emerald); color: var(--emerald-dark); }
+
+.page-header { margin-bottom: 24px; }
+.page-title { font-size: 24px; font-weight: 600; }
+.page-sub { color: var(--text-soft); font-size: 14px; margin-top: 4px; }
+
+/* ============ Dark Mode ============ */
+body.dark {
+  --ivory: #0D1512;
+  --white: #15201B;
+  --text-main: #E5E7EB;
+  --text-soft: #9CA3AF;
+  --border: #26332D;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+body.dark ::-webkit-scrollbar-thumb { background: #2E3B35; }
+
+input, select, textarea { color: var(--text-main); }
