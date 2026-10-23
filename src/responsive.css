@@ -1,0 +1,442 @@
+
+/* =================================
+   FLOWSPACE RESPONSIVE DESIGN
+   ================================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 70px;
+    padding: 24px 10px;
+  }
+
+  .logo h1,
+  .nav-item span:last-child,
+  .user-card div:last-child {
+    display: none;
+  }
+
+  .nav-item {
+    justify-content: center;
+    padding: 11px 0;
+  }
+
+  .user-card {
+    justify-content: center;
+    padding: 8px;
+  }
+
+  .main-area {
+    margin-left: 70px;
+    min-width: 0;
+  }
+
+  .main-area > div:last-child {
+    padding: 20px;
+  }
+
+  .search {
+    width: 160px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .sidebar {
+    width: 54px;
+    padding: 16px 5px;
+    overflow-x: hidden;
+  }
+
+  .logo {
+    justify-content: center;
+    padding: 0 0 18px;
+  }
+
+  .logo-icon {
+    font-size: 20px;
+  }
+
+  .nav {
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .nav-item {
+    position: relative;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 0;
+  }
+
+  .nav-icon {
+    font-size: 17px;
+  }
+
+  .badge {
+    min-width: 16px;
+    height: 16px;
+    font-size: 9px;
+    top: 0;
+    right: 0;
+  }
+
+  .user-card {
+    padding: 4px 0;
+    margin-top: 10px;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .main-area {
+    margin-left: 54px;
+    min-width: 0;
+    width: calc(100% - 54px);
+  }
+
+  .main-area > div:last-child {
+    padding: 12px;
+    min-width: 0;
+  }
+
+  .topbar {
+    min-height: 62px;
+    height: auto;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .topbar h2 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .topbar > div > p {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  .topbar-right {
+    gap: 6px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .theme-btn {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    font-size: 13px;
+  }
+
+  .topbar .avatar {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    font-size: 13px;
+  }
+
+  .bell {
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+
+  /* Prevent oversized content */
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    max-width: 100%;
+  }
+
+  /* Tables can scroll instead of breaking the page */
+  table {
+    max-width: 100%;
+  }
+
+  /* Avoid oversized headings */
+  h1 {
+    overflow-wrap: anywhere;
+  }
+
+  /* Responsive spacing for common cards */
+  .card,
+  .stat-card,
+  .project-card,
+  .task-card {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .main-area > div:last-child {
+    padding: 8px;
+  }
+
+  .topbar {
+    padding: 8px 6px;
+  }
+
+  .topbar h2 {
+    font-size: 12px;
+  }
+
+  .topbar-right {
+    gap: 4px;
+  }
+}
+
+
+/* Mobile: Green navigation bar at the top */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    min-height: 58px;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    padding: 8px 12px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+  }
+
+  .logo {
+    padding: 0;
+    border-bottom: none;
+    flex-shrink: 0;
+  }
+
+  .logo h1 {
+    display: block;
+    font-size: 16px;
+  }
+
+  .nav {
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    margin: 0 0 0 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .nav-item {
+    flex-shrink: 0;
+    padding: 9px;
+  }
+
+  .nav-item span:last-child,
+  .user-card {
+    display: none;
+  }
+
+  .badge {
+    top: 0;
+    right: 0;
+  }
+
+  .main-area {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 58px;
+  }
+
+  .topbar {
+    padding: 10px 12px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .layout {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .layout > .sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    padding: 8px 12px !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    z-index: 1000 !important;
+  }
+
+  .layout > .sidebar .logo {
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .layout > .sidebar .logo h1 {
+    display: block !important;
+    font-size: 15px !important;
+  }
+
+  .layout > .sidebar .nav {
+    flex: 1 !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    margin: 0 0 0 8px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+  }
+
+  .layout > .sidebar .nav-item {
+    flex-shrink: 0 !important;
+    padding: 8px !important;
+  }
+
+  .layout > .sidebar .nav-item span:last-child,
+  .layout > .sidebar .user-card {
+    display: none !important;
+  }
+
+  .layout > .main-area {
+    width: 100% !important;
+    margin: 0 !important;
+    padding-top: 60px !important;
+  }
+}
+
+
+/* Fix mobile navigation bar */
+@media screen and (max-width: 600px) {
+  .layout > .sidebar {
+    padding: 8px 10px !important;
+    gap: 8px !important;
+  }
+
+  .layout > .sidebar .logo {
+    flex-shrink: 0 !important;
+  }
+
+  .layout > .sidebar .logo h1 {
+    font-size: 14px !important;
+  }
+
+  .layout > .sidebar .nav {
+    flex: 1 !important;
+    min-width: 0 !important;
+    justify-content: space-between !important;
+    gap: 2px !important;
+    margin-left: 8px !important;
+  }
+
+  .layout > .sidebar .nav-item {
+    flex: 0 0 auto !important;
+    padding: 7px 4px !important;
+    position: relative !important;
+  }
+
+  /* Show icons only, hide all navigation labels */
+  .layout > .sidebar .nav-item span:not(.nav-icon):not(.badge) {
+    display: none !important;
+  }
+
+  .layout > .sidebar .nav-icon {
+    display: inline-block !important;
+    font-size: 17px !important;
+  }
+
+  .layout > .sidebar .badge {
+    display: flex !important;
+  }
+}
+
+
+/* Final mobile navigation spacing fix */
+@media screen and (max-width: 600px) {
+  .layout > .sidebar {
+    height: 64px !important;
+    min-height: 64px !important;
+    padding: 8px !important;
+    gap: 6px !important;
+  }
+
+  .layout > .sidebar .logo {
+    flex: 0 0 auto !important;
+    gap: 4px !important;
+  }
+
+  .layout > .sidebar .logo-icon {
+    font-size: 19px !important;
+  }
+
+  .layout > .sidebar .logo h1 {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+  }
+
+  .layout > .sidebar .nav {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 3px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none !important;
+  }
+
+  .layout > .sidebar .nav::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .layout > .sidebar .nav-item {
+    flex: 0 0 29px !important;
+    width: 29px !important;
+    min-width: 29px !important;
+    height: 40px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .layout > .sidebar .nav-icon {
+    font-size: 16px !important;
+    line-height: 1 !important;
+  }
+
+  .layout > .sidebar .badge,
+  .layout > .sidebar .user-card {
+    display: none !important;
+  }
+
+  .layout > .main-area {
+    padding-top: 64px !important;
+  }
+}
