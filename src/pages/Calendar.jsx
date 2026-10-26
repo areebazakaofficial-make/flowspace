@@ -90,7 +90,7 @@ const Calendar = () => {
         </div>
 
         <div className="card cal-side">
-          <h3>{selected === today ? 'Aaj ke Tasks' : selected}</h3>
+          <h3>{selected === today ? 'Today Tasks' : selected}</h3>
           {selectedTasks.length === 0 && <p className="empty">There is no task for today😌</p>}
           {selectedTasks.map((t) => {
             const m = getMember(t.assignee);

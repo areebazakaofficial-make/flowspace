@@ -104,7 +104,7 @@ const MyTasks = () => {
               <h3>New Task</h3>
               <form onSubmit={handleSubmit}>
                 <label>Title</label>
-                <input value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} placeholder="Task ka naam" required />
+                <input value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} placeholder="Task name" required />
 
                 <div className="form-row">
                   <div>
